@@ -1,0 +1,14 @@
+name: python app
+on: push
+jobs:
+  build:
+    name: Building a python app
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v4
+    - name: python syntax checker
+      # You may pin to the exact commit or the version.
+      # uses: cclauss/Find-Python-syntax-errors-action@90f67be9fb626b675a3971b1d08ab29851cb721f
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+          
